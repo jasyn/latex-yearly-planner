@@ -23,10 +23,9 @@
 \usepackage{marginnote}
 \usepackage{adjustbox}
 \usepackage{multido}
+\usepackage{rotating}
 
-\hypersetup{
-    {{- if not .Cfg.Debug.ShowLinks}}hidelinks=true{{end -}}
-}
+\hypersetup{pdfborder = {0 0 0}}
 
 
 \geometry{paperwidth={{.Cfg.Layout.Paper.Width}}, paperheight={{.Cfg.Layout.Paper.Height}}}

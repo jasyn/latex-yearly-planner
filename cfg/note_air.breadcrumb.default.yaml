@@ -1,0 +1,27 @@
+dotted: false
+addlasthalfhour: false
+
+layout:
+  paper:
+    width: 17cm
+    height: 22cm
+
+    margin:
+      top: 0.5cm
+      bottom: 0.7cm
+      left: 0.5cm
+      right: 0.5cm
+
+    reversemargins: true
+    marginparwidth: .8cm
+
+  numbers:
+    quarterlylines: 39
+    dailydiarygrateful: 40
+    dailybottomhour: 6
+    dailytophour: 23
+    dailynotes: 19
+    dailytodos: 3
+
+  lengths:
+    quarterlyspring: \textcolor{white}{.}

@@ -89,3 +89,29 @@
   \dimexpr\pagegoal-\pagetotal-\lineskip-9.4pt\relax
   \fi%
 }
+
+\newcommand{\eisenlabel}[1]{\footnotesize#1}
+\newcommand{\eisenline}{\underline{\makebox[0.44\textwidth][l]{$\square$}}}% <<< adjust width of boxes
+\newcommand{\eisenbox}{\fbox{%
+  \begin{tabular}{l}
+    \\
+    \eisenline\\
+    \eisenline\\
+    \eisenline\\
+    \eisenline\\
+    \eisenline\\
+    \eisenline\\
+    \eisenline\\
+    \\
+  \end{tabular}%
+}}
+\newcommand{\eisensquare}{%
+  \fboxrule=0.2ex% <<< adjust line width
+  \begin{tabular}{@{}r@{\hspace{0.3em}}c@{\hspace{-\fboxrule}}c@{}} % <<< adjust distance between rotated labels and box
+    & \eisenlabel{Urgent} & \eisenlabel{Not Urgent} \\
+  \turnbox{90}{\makebox[0pt]{\eisenlabel{Important}}}
+    & \eisenbox & \eisenbox \\[-\fboxrule] 
+  \turnbox{90}{\makebox[0pt]{\eisenlabel{Not Important}}}
+    & \eisenbox & \eisenbox
+  \end{tabular}%
+}

@@ -4,3 +4,4 @@
 {{ .Body.Extra.Table false -}}
 }
 \myLineThick\medskip
+\vskip\dimexpr3mm
